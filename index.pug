@@ -1,0 +1,73 @@
+html
+  head
+    meta(charset='UTF-8')
+    title MCT Engineering
+    link(rel='stylesheet', href="css/index.css")
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css', integrity='sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u', crossorigin='anonymous')
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css', integrity='sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp', crossorigin='anonymous')
+    link(href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css", rel="stylesheet", integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN", crossorigin="anonymous")
+    script(src='https://code.jquery.com/jquery-3.2.1.min.js')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js', integrity='sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa', crossorigin='anonymous')
+    
+    script(src='https://unpkg.com/vue@2.2.6')
+    
+  
+  
+  
+  
+  nav.navbar.navbar-default.navbar-fixed-top.navbar-top
+    .container
+      .navbar-header
+        a.navbar-brand MCT Engineering
+      .navbar-collapse.collapse
+        .nav.navbar-nav.navbar-right
+          li
+            a(href="#section_services")  Services
+          li
+            a(href="#section_quote") Quotation
+          li
+            a(href="#section_contact") Contact
+      
+  body
+    header.jumbotron
+      .container
+        .h1 MCT Engineering
+        p In MCT Engineering, our top-notch engineers have leading expertise in the subsea structural design and analysis to provide our clients the best solutions with safety, quality and reliability.
+        a.btn.btn-default(href="#" target="_blank") Know more about MCT Engineering
+    section#section_services
+      .container
+        .row
+          .col-sm-12.title
+            h1 Services
+            hr
+          .col-md-4.col-sm-6
+            .img_wrap
+              img(src="http://www.mencast.com.sg/dev/images/offshore/offshore-engineering-b1.jpg", alt="")
+            h3 Structural Engineering
+          .col-md-4.col-sm-6
+            .img_wrap
+              img(src="http://www.mencast.com.sg/dev/images/offshore/offshore-engineering-b1.jpg", alt="")
+            h3 Geotechnical Engineering
+          .col-md-4.col-sm-6
+            .img_wrap
+              img(src="http://www.mencast.com.sg/dev/images/offshore/offshore-engineering-b1.jpg", alt="")
+            h3 Advanced Analysis (Nonlinear FEA, impact, etc.)
+          .col-md-4.col-sm-6
+            .img_wrap
+              img(src="http://www.mencast.com.sg/dev/images/offshore/offshore-engineering-b1.jpg", alt="")
+            h3 Front End Engineering and Design
+          .col-md-4.col-sm-6
+            .img_wrap
+              img(src="http://www.mencast.com.sg/dev/images/offshore/offshore-engineering-b1.jpg", alt="")
+            h3 Detailed Design and Drafting
+          .col-md-4.col-sm-6
+            .img_wrap
+              img(src="http://www.mencast.com.sg/dev/images/offshore/offshore-engineering-b1.jpg", alt="")
+            h3 Project Management
+    section#section_quote
+      .container
+        h3.page-header Get a quote for your project
+        p.well Just need to add the item into the cart, we will estimate the timeline and price for you.
+          
+      
+  script(src='js/app.js')
