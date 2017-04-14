@@ -15,20 +15,21 @@ html
   
   
   
-  nav.navbar.navbar-default.navbar-fixed-top.navbar-top
-    .container
-      .navbar-header
-        a.navbar-brand MCT Engineering
-      .navbar-collapse.collapse
-        .nav.navbar-nav.navbar-right
-          li
-            a(href="#section_services")  Services
-          li
-            a(href="#section_quote") Quotation
-          li
-            a(href="#section_contact") Contact
+  
       
   body
+    nav.navbar.navbar-default.navbar-fixed-top.navbar-top
+      .container
+        .navbar-header
+          a.navbar-brand MCT Engineering
+        .navbar-collapse.collapse
+          .nav.navbar-nav.navbar-right
+            li
+              a(href="#section_services")  Services
+            li
+              a(href="#section_quote") Quotation
+            li
+              a(href="#section_contact") Contact
     header.jumbotron
       .container
         .h1 MCT Engineering
@@ -64,10 +65,11 @@ html
             .img_wrap
               img(src="http://www.mencast.com.sg/dev/images/offshore/offshore-engineering-b1.jpg", alt="")
             h3 Project Management
+            
     section#section_quote
-      .container
+      .container#app
         h3.page-header Get a quote for your project
         p.well Just need to add the item into the cart, we will estimate the timeline and price for you.
-          
-      
+        .row  
+        .col-md-4.col-sm-6.item(v-for="item in items") Name: {{item.name}}<br>Type: {{item.type}}
   script(src='js/app.js')
